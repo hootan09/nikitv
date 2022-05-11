@@ -4,7 +4,8 @@ layout: about
 image: images/about.jpg
 caption:
   enable: true
-  title: I’m Henara Colii, A content writer based in LDN, currently at Bookworm.
+  title: سایت نیکی تی وی با هدف ایجاد فضایی جهت یادگیری نرم‌افزار های مختلف راه اندازی
+    شده است.
 social:
   enable: true
   social_links:
@@ -34,7 +35,6 @@ what_i_do:
       non purus eget ipsum elementum venenatis.
 
 ---
-سایت نیکی تی وی با هدف ایجاد فضایی جهت یادگیری نرم‌افزار های مختلف راه اندازی شده است.
 
 در این سایت ما روی مباحث مختلفی اعم از **_طراحی سایت، برنامه نویسی، جلوه‌های ویژه، طراحی بازی‌های رایانه‌ای، وب و شبکه_** و…. کار خواهیم کرد و مطالبی آموزشی در این زمینه‌ها قرار خواهیم داد.
 
