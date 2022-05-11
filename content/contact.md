@@ -1,5 +1,8 @@
 ---
-title: "Contact"
-layout: "contact"
-draft: false
+title: تماس با ما
+layout: contact
+
 ---
+**جهت تماس با _Admin_ می توانید اطلاعات زیر را تکمیل نمایید و در اولین فرصت رسیدگی خواهد شد.**
+
+**با تشکر**
