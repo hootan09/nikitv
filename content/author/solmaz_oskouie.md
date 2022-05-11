@@ -1,6 +1,6 @@
 ---
 title: solmaz.oskouie
-image: "/uploads/solmaz.png"
+image: images/author/solmaz.png
 email: admin@gmail.com
 date: 2019-02-06T04:14:19+00:00
 social:

@@ -1,6 +1,6 @@
 ---
 title: mam_niki
-image: uploads/hootan09.png
+image: images/author/hootan09.png
 email: hootan09@gmail.com
 date: 2019-01-01T04:20:19+00:00
 social:
