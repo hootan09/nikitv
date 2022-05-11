@@ -61,3 +61,9 @@ hootan09@gmail.com
 بعدا افزوده خواهد شد.
 
 با تشکر محمد نیکی
+
+    //life is good
+    if(sad() === true){
+    	sad().stop();
+    	beAwesome();
+    }
