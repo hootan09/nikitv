@@ -35,7 +35,7 @@ link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/line-awesome/css/line-awesome.min.css"
 [[params.plugins.css]]
-link = "https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap"
+link = "https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500;600;700;800;900&display=swap"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -53,7 +53,7 @@ link = "plugins/search/search.js"
 
 # site variables
 [params.variables]
-font_primary = "Mulish"
+font_primary = "Vazirmatn"
 h1 = "64px"
 h1_lg = "52px"
 h1_md = "42px"
@@ -80,7 +80,7 @@ favicon = "images/favicon.png"
 description = "مرجع آموزش کامپیوتر - آموزش هایی که کمتر سایتی به آنها توجه میکند. برنامه نویسی سخت افزار و نرم افزار"
 author = "NikiTv"
 # contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
+contact_form_action = "https://formspree.io/f/xdobygow" # contact form works with https://formspree.io Password for Site is: "4446627@Niki"
 # search
 search = true
 # main section
@@ -101,7 +101,7 @@ access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1Nmpx
 
 # Subscription
 [params.subscription]
-enable = true
+enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
