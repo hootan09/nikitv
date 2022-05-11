@@ -21,18 +21,15 @@ what_i_do:
   title: What I Do
   enable: true
   item:
-  - title: Content Writing
-    icon: las la-pen-nib
-    description: Purus eget ipsum elementum venenatis, quis rutrum mi semper nonpurus
-      eget ipsum elementum venenatis.
-  - title: Photography
-    icon: las la-camera
-    description: Aenean maximus urna magna elementum venenatis, quis rutrum mi semper
-      non purus eget ipsum elementum venenatis.
-  - title: Web Research
+  - title: برنامه نویسی
     icon: lar la-snowflake
-    description: Aenean maximus urna magna elementum venenatis, quis rutrum mi semper
-      non purus eget ipsum elementum venenatis.
+    description: برنامه نویسی زبان هایی همچون Golang و Node.js و Python
+  - title: نویسندگی
+    icon: las la-pen-nib
+    description: در بلاگ هایی همچون ویرگول و...  اقدام به نویسندگی میکنیم
+  - title: جستجو و تحقیق در بستر وب
+    icon: lar la-snowflake
+    description: تحقیق و توسعه در دنیای کامپیوتر
 
 ---
 &#x202b;در این سایت ما روی مباحث مختلفی اعم از **_طراحی سایت، برنامه نویسی، جلوه‌های ویژه، طراحی بازی‌های رایانه‌ای، وب و شبکه_** و…. کار خواهیم کرد و مطالبی آموزشی در این زمینه‌ها قرار خواهیم داد.
