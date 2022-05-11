@@ -17,3 +17,6 @@ $ hugo new blog/new-post.md
 ```sh
 $ hugo new new-page.md
 ```
+
+###### Help for Writing Post Content:
+<"url">/elements

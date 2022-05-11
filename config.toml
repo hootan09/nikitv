@@ -159,11 +159,11 @@ hasChildren = true
   url = "categories/"
   weight = 3
   
-  [[menu.main]]
-  parent = "صفحات"
-  name = "Elements"
-  weight = 4
-  url = "elements/"
+  # [[menu.main]]
+  # parent = "صفحات"
+  # name = "Elements"
+  # weight = 4
+  # url = "elements/"
   
   [[menu.main]]
   parent = "صفحات"
