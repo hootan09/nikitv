@@ -18,7 +18,7 @@ social:
   - link: https://www.github.com/
     icon: lab la-github
 what_i_do:
-  title: What I Do
+  title: ما چکار میکنیم؟
   enable: true
   item:
   - title: برنامه نویسی
