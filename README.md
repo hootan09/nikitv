@@ -20,3 +20,9 @@ $ hugo new new-page.md
 
 ###### Help for Writing Post Content:
 <"url">/elements
+
+#### Bugs:
+
+```sh
+# theme\bookworm-light\layouts\partials\page-header.html line 24
+```
