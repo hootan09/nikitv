@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "http://example.org"
-title = "Bookworm - Personal Blog Template"
+title = "مرجع آموزش کامپیوتر"
 theme = "bookworm-light"
 # post pagination
 paginate = "5"
@@ -74,11 +74,11 @@ color_primary = "#01AD9F"
 #################### default parameters ################################
 [params]
 logo = "images/logo.png"
-logo_width = "200px"
+logo_width = "50px"
 favicon = "images/favicon.png"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "مرجع آموزش کامپیوتر - آموزش هایی که کمتر سایتی به آنها توجه میکند. برنامه نویسی سخت افزار و نرم افزار"
+author = "NikiTv"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # search
@@ -86,7 +86,7 @@ search = true
 # main section
 mainSections = ["blog"]
 # copyright
-copyright = "Designed & Developed By [Gethugothemes](https://gethugothemes.com/)"
+copyright = "طراحی و توسعه توسط جمعی از دوستان [NikiTv](https://nikitv.ir/)"
 
 # Preloader
 [params.preloader]
@@ -116,85 +116,85 @@ expire_days = 2
 
 ############################# Main Menu ########################
 [[menu.main]]
-name = "Home"
+name = "خانه"
 url = "/"
 weight = 1
   
 [[menu.main]]
-name = "About"
+name = "درباره ما"
 url = "about/"
 weight = 3
   
 [[menu.main]]
-name = "Contact"
+name = "تماس با ما"
 url = "contact/"
 weight = 4
   
-[[menu.main]]
-name = "Buy Premium"
-url = "https://gethugothemes.com/products/bookworm/"
-weight = 5
+# [[menu.main]]
+# name = "Buy Premium"
+# url = "https://gethugothemes.com/products/bookworm/"
+# weight = 5
 
 [[menu.main]]
 weight = 6
 url = "#"
-name = "Pages"
+name = "صفحات"
 hasChildren = true
 
   [[menu.main]]
-  parent = "Pages"
-  name = "Author"
+  parent = "صفحات"
+  name = "نویسندگان"
   url = "author/"
   weight = 1
   
   [[menu.main]]
-  parent = "Pages"
-  name = "Tags"
+  parent = "صفحات"
+  name = "تگ ها"
   url = "tags/"
   weight = 2
   
   [[menu.main]]
-  parent = "Pages"
-  name = "Category"
+  parent = "صفحات"
+  name = "دسته بندی"
   url = "categories/"
   weight = 3
   
   [[menu.main]]
-  parent = "Pages"
+  parent = "صفحات"
   name = "Elements"
   weight = 4
   url = "elements/"
   
   [[menu.main]]
-  parent = "Pages"
-  name = "Privacy"
+  parent = "صفحات"
+  name = "حریم خصوصی"
   url = "privacy/"
   weight = 5
   
   [[menu.main]]
-  parent = "Pages"
-  name = "Terms & Conditions"
+  parent = "صفحات"
+  name = "قوانین و ضوابط"
   url = "terms-conditions/"
   weight = 6
 
 ############################# Footer Menu ########################
 [[menu.footer]]
-name = "About"
+name = "درباره ما"
 url = "about/"
 weight = 1
 
 [[menu.footer]]
-name = "Authors"
+name = "نویسندگان"
 url = "author/"
 weight = 2
 
 [[menu.footer]]
-name = "Privacy"
+name = "حریم خصوصی"
 url = "privacy/"
 weight = 3
 
 [[menu.footer]]
-name = "Terms & Conditions"
+name = "قوانین و ضوابط"
 url = "terms-conditions/"
 weight = 4
 
