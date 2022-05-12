@@ -105,4 +105,6 @@ Required DLLs: pthreadVC2.dll
 
 در پایان ویدیو راه استفاده دوم رو هم در همین پایین می تونید ببینید .
 
+{{< video "/uploads/How-to-use-MQTT-Broker-on-Windows.mp4" "mb-5 mx-auto d-block" >}}
+
 موفق باشید.
