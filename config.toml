@@ -3,7 +3,7 @@ baseURL = "http://nikitv.ir"
 title = "مرجع آموزش کامپیوتر"
 theme = "bookworm-light"
 # post pagination
-paginate = "9"
+paginate = "5"
 # post excerpt
 summaryLength = "20"
 # google analytics

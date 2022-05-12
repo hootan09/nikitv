@@ -26,7 +26,7 @@ what_i_do:
     description: برنامه نویسی زبان هایی همچون Golang و Node.js و Python
   - title: نویسندگی
     icon: las la-pen-nib
-    description: در بلاگ هایی همچون ویرگول و...  اقدام به نویسندگی میکنیم
+    description: در بلاگ هایی همچون ویرگول و مدیوم و...  اقدام به نویسندگی میکنیم
   - title: جستجو و تحقیق در بستر وب
     icon: lar la-snowflake
     description: تحقیق و توسعه در دنیای کامپیوتر

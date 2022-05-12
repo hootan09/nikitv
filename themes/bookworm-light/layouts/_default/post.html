@@ -32,7 +32,8 @@
     <h3 dir="rtl" class="mb-3 text-right">
       <a class="post-title" href="{{.Permalink}}">{{.Title}}</a>
     </h3>
-    <p dir="rtl" class="text-right">{{ .Plain | truncate 150 }}</p>
+    <!-- <p dir="rtl" class="text-right">{{ .Plain | truncate 150 }}</p> -->
+    <p dir="rtl" class="text-right">{{ .Description | truncate 800 }}</p>
 
     <a href="{{.Permalink}}" aria-label="More on {{.Title}}"><i class="las la-angle-left"></i>بیشتر بخوانید </a>
   </div>
