@@ -3,7 +3,7 @@ baseURL = "http://example.org"
 title = "مرجع آموزش کامپیوتر"
 theme = "bookworm-light"
 # post pagination
-paginate = "5"
+paginate = "9"
 # post excerpt
 summaryLength = "20"
 # google analytics
