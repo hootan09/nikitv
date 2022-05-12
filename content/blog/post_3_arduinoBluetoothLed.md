@@ -1,8 +1,7 @@
 ---
 title: آموزش کنترل کردن یک لامپ LED توسط گوشی اندروید – بلوتوث و برد Arduino
-image: images/post_3_arduinoBluetoothLed/LED-600x450.gif
-description: آموزش اتوماتیک سازی منازل با اپلیکیشن اندرویدی و برد Arduino و ماژول
-  بلوتوث به همراه سورس کد برنامه
+image: images/post_3_arduinoBluetoothLed/LED.gif
+description: آموزش اتوماتیک سازی منازل با اپلیکیشن اندرویدی و برد Arduino و ماژول بلوتوث به همراه سورس کد برنامه
 date: 2017-04-05T15:51:55.000+04:30
 author: mam_niki
 tags:
@@ -13,7 +12,6 @@ categories:
 - سخت افزار
 
 ---
-![](http://nikitv.ir/wp-content/uploads/2017/04/Control-an-LED-using-your-smartphone-min.jpg =500x348)
 
 آیا علاقه دارید که لوازم خانه و اطراف خود را با دستگاه های هوشمند نظیر اندروید و … کنترل کنید؟
 
@@ -25,7 +23,9 @@ categories:
 
 1- ماژول بلوتوث HC-05/06 این ماژول به سادگی در بازار های ایرانی و مارکت های الکترونیک یافت می شود.[**اینجا**](http://www.jahankitshop.com/market/d/5710) را ببینید.
 
-2- برد Arduino ترجیحا مدل uno .[**اینجا**](http://www.jahankitshop.com/market/d/6589) را ببینید.![](http://nikitv.ir/wp-content/uploads/2017/04/ABB1-min.jpg =400x405)
+2- برد Arduino ترجیحا مدل uno .[**اینجا**](http://www.jahankitshop.com/market/d/6589) را ببینید.
+
+{{< image src="images/post_3_arduinoBluetoothLed/ABB1-min.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 3- باتری 9 ولت کتابی و مقداری سیم
 
@@ -43,13 +43,13 @@ categories:
 
 **دریافت اپلیکیشن :**
 
-ابتدا نرم افزار مورد نیاز دستگاه اندرویدی خود را از [**این لینک**](http://nikitv.ir/wp-content/uploads/2017/04/LED-Controller.apk) دریافت و نصب کنید. نام این اپلیکیشن **LED Controller.apk** می باشد.
+ابتدا نرم افزار مورد نیاز دستگاه اندرویدی خود را از [**این لینک**](/uploads/LED-Controller.apk) دریافت و نصب کنید. نام این اپلیکیشن **LED Controller.apk** می باشد.
 
 نحوه کار کرد کلی روش آموزشی به صورت شکل زیر میباشد.
 
 این پروژه از سه قسمت اصلی تشکیل شده است. که شامل **دستگاه اندرویدی – ماژول بلوتوث – برد آردواینو** می باشد.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/ABB9-min.jpg =600x120)
+{{< image src="images/post_3_arduinoBluetoothLed/ABB9-min.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 ماژول بلوتوث HC-05/06 قابلیت کارکرد به صورت ارتباط سریال را داراست به همین منظور استفاده از آن بسیار آسان است.
 
@@ -61,7 +61,7 @@ categories:
 
 ### **نحوه اتصال سخت افزاری ماژول بلوتوث به برد آردواینو**
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/ABB2-min.jpg =600x423)
+{{< image src="images/post_3_arduinoBluetoothLed/ABB2-min.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 این مدار و اتصالات آن (شکل بالا) بسیار ساده است و نیازی به توضیح زیادی ندارد.
 
@@ -93,22 +93,44 @@ RX/TX پایه های مربوط به اتصال سریال هستند.
 
 اکنون مدار شما آماده است.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/ABB3-min.jpg =450x302)
+{{< image src="images/post_3_arduinoBluetoothLed/ABB3-min.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 ### **برنامه نویسی برد آردواینو Arduino uno**
 
 **نکته: فراموش نکنید که قبل از آپلود کد بر روی آردواینو حتما اتصالات TX/RX را غیر فعال کنید تا آپلود به درستی انچام شود.**
 
-/* * Bluetooh Basic: LED ON OFF * This program lets you to control a LED on pin 13 of arduino using a bluetooth module */ char data = 0; //Variable for storing received data void setup() { Serial.begin(9600); //Sets the data rate in bits per second (baud) for serial data transmission pinMode(13, OUTPUT); //Sets digital pin 13 as output pin } void loop() { if(Serial.available() > 0) // Send data only when you receive data: { data = Serial.read(); //Read the incoming data and store it into variable data Serial.print(data); //Print Value inside data in Serial monitor Serial.print("\\n"); //New line if(data == '1') //Checks whether value of data is equal to 1 digitalWrite(13, HIGH); //If value is 1 then LED turns ON else if(data == '0') //Checks whether value of data is equal to 0 digitalWrite(13, LOW); //If value is 0 then LED turns OFF } }
-
-| --- | --- |
-| 123456789101112131415161718192021222324 | /* * Bluetooh Basic: LED ON OFF * This program lets you to control a LED on pin 13 of arduino using a bluetooth module */char data = 0; //Variable for storing received datavoid setup() { Serial.begin(9600); //Sets the data rate in bits per second (baud) for serial data transmission pinMode(13, OUTPUT); //Sets digital pin 13 as output pin}void loop(){ if(Serial.available() > 0) // Send data only when you receive data: { data = Serial.read(); //Read the incoming data and store it into variable data Serial.print(data); //Print Value inside data in Serial monitor Serial.print("\\n"); //New line if(data == '1') //Checks whether value of data is equal to 1 digitalWrite(13, HIGH); //If value is 1 then LED turns ON else if(data == '0') //Checks whether value of data is equal to 0 digitalWrite(13, LOW); //If value is 0 then LED turns OFF } } |
+```ino
+/* 
+ *  Bluetooh Basic: LED ON OFF
+ *  This program lets you to control a LED on pin 13 of arduino using a bluetooth module
+ */
+char data = 0;                //Variable for storing received data
+void setup() 
+{
+  Serial.begin(9600);         //Sets the data rate in bits per second (baud) for serial data transmission
+  pinMode(13, OUTPUT);        //Sets digital pin 13 as output pin
+}
+void loop()
+{
+  if(Serial.available() > 0)  // Send data only when you receive data:
+  {
+    data = Serial.read();      //Read the incoming data and store it into variable data
+    Serial.print(data);        //Print Value inside data in Serial monitor
+    Serial.print("\n");        //New line 
+    if(data == '1')            //Checks whether value of data is equal to 1 
+      digitalWrite(13, HIGH);  //If value is 1 then LED turns ON
+    else if(data == '0')       //Checks whether value of data is equal to 0
+      digitalWrite(13, LOW);   //If value is 0 then LED turns OFF
+  }                            
+ 
+}                 
+```
 
 کد بالا بسار ساده می باشد و نیازی به توضیحات اضافه در رابطه با آن نیست.فقط کافیست این کد را با استفاده از Arduino IDE بر روی برد آپلود کنید.لینک دانلود نرم افزاار Arduino IDE را در ابتدای سایت قرار دادیم.
 
 ### **نصب اپلیکیشن اندرویدی**
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/ABB5-min.jpg =225x225)
+{{< image src="images/post_3_arduinoBluetoothLed/ABB5-min.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 لینک دانلود اپلیکیشن را بالاتر قرار دادیم . می توانید آن را نصب کنید . پس از اتصال آردواینو به منبع تغذیه (باتری) می توانید به محض روشن شدن برد آن را با بلوتوث دستگاه اندرویدی خود یکسان سازی (pair) کنید.
 
@@ -116,20 +138,20 @@ RX/TX پایه های مربوط به اتصال سریال هستند.
 
 برای یکسان سازی باید به تنظیمات بلوتوث دستگاه خود بروید . پس از یکسان سازی اپلیکیشن را باز کنید و دکمه قرمز آن را بزنید.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/ABB7-min.jpg =401x400)
+{{< image src="images/post_3_arduinoBluetoothLed/ABB7-min.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 بعد از آن دستگاه های pair شده در اپلیکیشن نشان داده خواهد شد .بر روی آن کلیک کنید تا به آن ماژول بلوتوث متصل شوید.
 
 فراموش نکنید که نام آن ماژول HC-05 یا HC-06 بود.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/ABB8-min.jpg =400x400)
+{{< image src="images/post_3_arduinoBluetoothLed/ABB8-min.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 اکنون داستگاه آماده ارسال سیگنال به ماژول بلوتوث و برد آردواینو خواهد بود.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/LED.gif =640x480)
+{{< image src="images/post_3_arduinoBluetoothLed/LED.gif" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 این فقط یک آموزش ساده بود برای آموزش های حرفه ای تر بقیه سایت را جستجو کنید.
 
 جهت توسعه و یا تغییر اپلیکیشن می توانید سورس آن را خریداری کنید. این برنامه را میتوان جهت کنترل ربات و دیگر دستگاه ها توسعه داد.
 
-در پایان شما را به دیدن ویدیو زیر دعوت می کنیم .
+در پایان شما را به دیدن  [**این**](/uploads/Arduino-Bluetooth-Basic-BLINK-LED.mp4) ویدیو دعوت می کنیم .
