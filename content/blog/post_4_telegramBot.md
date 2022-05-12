@@ -14,7 +14,8 @@ categories:
 - نرم افزار
 
 ---
-![](http://nikitv.ir/wp-content/uploads/edd/2017/04/512x512bb.jpg =412x412)
+
+{{< image src="images/post_4_telegramBot/512x512bb.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 بدون شک یکی از بازی های خیلی خیلی خوب تلگرام بازی Lumberjack می تونه باشه .این بازی با سبک Score Base و جذابیت امتیازی بودنش می تونه دوستان توی یک گروه تلگرامی رو سرگرم کنه .
 
@@ -24,7 +25,7 @@ categories:
 
 من توی یکی از گروه ها با این بازی آشنا شدم و دلم می خواست که از لحاظ امتیاز نفر اول باشم و از اونجایی که بازیم خیلی خوب نبود ، دست به کار شدم تا یک ربات بنویسم تا خودش بازی رو پیش ببره .
 
-![](http://nikitv.ir/wp-content/uploads/edd/2017/04/Jack-Back.jpg =700x631)
+{{< image src="images/post_4_telegramBot/Jack-Back.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 **اگه دوست دارید که شما هم این بازی رو تجربه کنید میتونید از** [**این لینک**](https://telegram.games/games/lumberjack/) **این بازی رو امتحان کنید. سرگرم کننده است.**
 
@@ -40,15 +41,7 @@ categories:
 
 قبل از هر چیز پیشنهاد می کنم که ویدیو زیر رو ببینید تا یک دید کلی از این آموزش داشته باشید.
 
-نمایشگر ویدیو
-
-Media error: Format(s) not supported or source(s) not found
-
-[Download File: ](http://nikitv.ir/wp-content/uploads/2017/04/lumberjack.mp4?_=1)[http://nikitv.ir/wp-content/uploads/2017/04/lumberjack.mp4?_=1](http://nikitv.ir/wp-content/uploads/2017/04/lumberjack.mp4?_=1 "http://nikitv.ir/wp-content/uploads/2017/04/lumberjack.mp4?_=1")
-
-00:00
-
-00:00
+{{< video "/uploads/lumberjack.mp4" "mx-auto d-block" >}}
 
 در ویدیو من از IDE محبوب pycharm برای برنامه نویسی استفاده کردم .لینک خود گیم رو از توی تلگرام در آوردم و توی مرورگر بازش کردم و گیم به خوبی کار کرد.
 
@@ -69,19 +62,53 @@ Media error: Format(s) not supported or source(s) not found
 
 ### **کد برنامه**
 
-import time from pyautogui import press import win32ui from win32gui import GetWindowText, GetForegroundWindow def main(): time.sleep(3) press('space') tman = 1 w = win32ui.FindWindow( None, GetWindowText(GetForegroundWindow()) ) dc = w.GetWindowDC() while(1==1): if(tman==1): rgb=dc.GetPixel (193, 300) & 0xff if(rgb in xrange(190,215)): press('left') time.sleep(.05) continue else: press('right') #time.sleep(.0) tman = 0 continue else : rgb=dc.GetPixel (308, 300) & 0xff if(rgb in xrange(190,215)): press('right') time.sleep(.05) continue else: press('left') #time.sleep(.0) tman = 1 continue if **name** == '**main**': main()
-
-| --- | --- |
-| 123456789101112131415161718192021222324252627282930313233343536 | import timefrom pyautogui import pressimport win32uifrom win32gui import GetWindowText, GetForegroundWindowdef main(): time.sleep(3) press('space') tman = 1 w = win32ui.FindWindow( None, GetWindowText(GetForegroundWindow()) ) dc = w.GetWindowDC() while(1==1): if(tman==1): rgb=dc.GetPixel (193, 300) & 0xff if(rgb in xrange(190,215)): press('left') time.sleep(.05) continue else: press('right') #time.sleep(.0) tman = 0 continue else : rgb=dc.GetPixel (308, 300) & 0xff if(rgb in xrange(190,215)): press('right') time.sleep(.05) continue else: press('left') #time.sleep(.0) tman = 1 continueif **name** == '**main**': main() |
+```py
+import time
+from pyautogui import press
+import win32ui
+from win32gui import GetWindowText, GetForegroundWindow
+def main():
+    time.sleep(3)
+    press('space')
+    tman = 1
+    w = win32ui.FindWindow( None, GetWindowText(GetForegroundWindow()) )
+    dc = w.GetWindowDC()
+    while(1==1):
+           
+            if(tman==1):
+                rgb=dc.GetPixel (193, 300) & 0xff
+                if(rgb in xrange(190,215)):
+                    press('left')
+                    time.sleep(.05)
+                    continue
+                else:
+                    press('right')
+                    #time.sleep(.0)
+                    tman = 0
+                    continue
+            else :
+                rgb=dc.GetPixel (308, 300) & 0xff
+                if(rgb in xrange(190,215)):
+                    press('right')
+                    time.sleep(.05)
+                    continue
+                else:
+                    press('left')
+                    #time.sleep(.0)
+                    tman = 1
+                    continue
+if __name__ == '__main__':
+	main()
+```
 
 کد برنامه بسار سادست ..فقط یک نکته هست که باید بدونید اون هم اینه که زمانی که tman = 1 میشه یا هست منظور اینه که کاراکتر بازی سمت چپ درخت قرار داره.
 
 البته نوشت این جور برنامه ها سادست و فقط کمی پیچیدگی کار با پکیج ها رو داره .
 
-rgb=dc.GetPixel (193, 300) & 0xff if(rgb in xrange(190,215)):
-
-| --- | --- |
-| 12 | rgb=dc.GetPixel (193, 300) & 0xffif(rgb in xrange(190,215)): |
+```py
+rgb=dc.GetPixel (193, 300) & 0xff
+if(rgb in xrange(190,215)):
+```
 
 این دو خط از کد هم پیکسل های بالا سر کاراکتر رو میگیره و شرط بررسی میکنه که رنگش طیفی از رنگ سبز هست یا نه (یعنی آیا بالای سرش شاخه ظاهر شده یا نه)
 
@@ -93,27 +120,29 @@ rgb=dc.GetPixel (193, 300) & 0xff if(rgb in xrange(190,215)):
 
 این کتاب رو توی سایت آمازون از [**این لینک**](https://www.amazon.com/Automate-Boring-Stuff-Python-Programming/dp/1593275994) می تونید پیدا کنید.قیمت این کتاب حدود 25 دلار هست . اما لینک دانلود pdf اون رو در آخر این پست براتون می ذارم.
 
-![](http://nikitv.ir/wp-content/uploads/edd/2017/04/book-python.jpg =378x499)
+{{< image src="images/post_4_telegramBot/book-python.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 ### موضوعات کتاب
 
-Search for text in a file or across multiple files
+```txt
+- Search for text in a file or across multiple files
 
-Create, update, move, and rename files and folders
+  Create, update, move, and rename files and folders
 
-Search the Web and download online content
+- Search the Web and download online content
 
-Update and format data in Excel spreadsheets of any size
+- Update and format data in Excel spreadsheets of any size
 
-Split, merge, watermark, and encrypt PDFs
+- Split, merge, watermark, and encrypt PDFs
 
-Send reminder emails and text notifications
+- Send reminder emails and text notifications
 
-Fill out online forms
+- Fill out online forms
+```
 
 امیدوارم که خدا منو ببخشه . می دونم که نویسندش زحمت زیادی برای نوشتن این کتاب کشیده.
 
-[**لینک دانلود کتاب**](http://nikitv.ir/wp-content/uploads/2017/04/automate-the-boring-stuff-with-python-2015-.pdf)
+[**لینک دانلود کتاب در کانال تلگرام**](http://t.me/pcbooks)
 
 ##### **درپایان یه تشکر خیلی خیلی ویژه از دوست برنامه نویسم ‘علی سلمانی’ عزیز که توی نوشتن این برنامه به من خیلی خیلی کمک کرد.**
 

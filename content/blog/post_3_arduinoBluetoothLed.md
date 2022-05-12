@@ -154,6 +154,8 @@ void loop()
 
 جهت توسعه و یا تغییر اپلیکیشن می توانید سورس آن را خریداری کنید. این برنامه را میتوان جهت کنترل ربات و دیگر دستگاه ها توسعه داد.
 
-در پایان شما را به دیدن  [**این**](/uploads/Arduino-Bluetooth-Basic-BLINK-LED.mp4) ویدیو دعوت می کنیم .
+در پایان شما را به دیدن  ویدیو زیر دعوت می کنیم .
+
+{{< video "/uploads/Arduino-Bluetooth-Basic-BLINK-LED.mp4" "mx-auto d-block" >}}
 
 [**دانلود سورس کد**](/uploads/Arduino-Bluetooth-Basic.zip)
