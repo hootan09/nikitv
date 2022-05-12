@@ -14,7 +14,8 @@ categories:
 - سخت افزار
 
 ---
-![](http://nikitv.ir/wp-content/uploads/2017/04/DIY_SmartHome1.jpg =480x800)
+
+{{< image src="images/post_2_homeAutomation/DIY_SmartHome1.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 تا حالا شده که بخواین خونتون رو اتوماتیک کنید ؟
 
@@ -52,19 +53,19 @@ categories:
 
 این نکته رو هم بگم که رله ها یک طرفشون به دستگاه مورد نظر شما وصل میشه و طرف دیگش به پین های دیجیتال (digital pin) برد آردواینو وصل هست .
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/smarthome1.png =822x389)
+{{< image src="images/post_2_homeAutomation/smarthome1.png" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 ### **پیاده سازی اتصالات برای هوشمند سازی منازل به کمک آردواینو و بلوتوث**
 
 شمای کلی اتصال وسایل به هم مانند شکل زیر هست :
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/homeauto.png =992x840)
+{{< image src="images/post_2_homeAutomation/homeauto.png" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 دقت داشته باشید که در شکل بالا پایه Tx ماژول بلوتوث به پایه Rx برد آردواینو (digital pin 0) متصل شده است و همینطور پایه RX ماژول بلوتوث به پایه TX برد آردواینو (digital pin 1) متصل است.
 
 همینطور پایه VCC (پایه مثبت) در ماژول بلوتوث به پایه 5 ولت آردواینو متصل است و GND یا پایه منفی این ماژول نیز به GND آردواینو متصل است.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/relay.png =157x117)
+{{< image src="images/post_2_homeAutomation/relay.png" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 شکل بالا تصوری از پایه های رله 5 ولت را نشان می دهد. پایه های شماره 1 و 3 در حقیقت به برد آردواینو متصل می شود.پایه شماره 1 رله به یکی از digital pin های برد آردواینو و پایه شماره 3 به پایه منفی یا GND متصل می شود.
 
@@ -72,26 +73,85 @@ categories:
 
 #### **توجه:لطفا در انتخاب رله مناسب دقت کنید زیرا بسیار خطر ناک می باشد. همچنیناز مشورت مهندسین برق استفاده نمایید تا دچار سانحه برق گرفتگی و یا آتش سوزی نشوید.**
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/relays.png =374x236)
+{{< image src="images/post_2_homeAutomation/relays.png" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 شکل کلی پیاده سازی برد :
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/arrangmnt3-300x246.jpg =300x246)
+{{< image src="images/post_2_homeAutomation/arrangmnt3-300x246.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 در صورتی که می خواهید برد PCB خود را بسازید می توانید از شماتیک زیر نیز کمک بگیرید.برای این کار فقط کافیست که بوت لودر BootLoader مربوط به آردواینو را در میکرو کنترلر های ATmega 168/328 بریزید و دیگر نیازی به برد آردواینو نیز نخواهید داشت.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/SmartHomeSchematic.png =1772x781)
+{{< image src="images/post_2_homeAutomation/SmartHomeSchematic.png" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 ### **برنامه نویسی برد آردواینو جهت فرمان پذیری از ماژول بلوتوث**
 
-![](http://nikitv.ir/wp-content/uploads/edd/2017/04/arduino.png =658x353)
+{{< image src="images/post_2_homeAutomation/arduino-768x412.png" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 ابتدا برنامه Arduino IDE را از لینک بالا دریافت کنید و سپس کد مورد نظر را در این محیط اجرا کنید . در صورتی که قبلا با این محیط آشنایی نداشته اید برای یادگیری آن به اینترنت مراجعه کنید. بارگذاری کد در برد های آردواینو بسیار راحت می باشد.**به زودی آموزشی در این رابطه خواهیم داشت.**
 
-/****************** Smartphone Controlled Home ******************/ /*Coder - Arvind Sanjeev*/ /*The following is the code required to be run on arduino to enable control of your home appliances from a smartphone, please install DIY SmartHome android application first on your android phone*/ /*This project requires 2 continous rotation servos connected to pins 9 and 10 of arduino*/ byte val; void setup() { Serial.begin(115200);//Change the baud rate value depending on the default baud rate of your bluetooth module, for Bluesmirf-115200 and for JY-MCU-9600 pinMode(2, OUTPUT);//Light1 pin pinMode(3, OUTPUT);//Light2 pin pinMode(4, OUTPUT);//Light3 pin pinMode(5, OUTPUT);//AC pin pinMode(6, OUTPUT);//Door Lock } void loop() { int a=0; if(Serial.available()) { val=Serial.read(); Serial.println(int(val));//Display received value on Serial Monitor if(int(val)==49)//Turn Light1 ON digitalWrite(2,HIGH); else if (int(val)==50)//Turn Light1 OFF digitalWrite(2,LOW); if(int(val)==51)//Turn Light2 ON digitalWrite(3,HIGH); else if(int(val)==52)//Turn Light2 OFF digitalWrite(3,LOW); if(int(val)==53)//Turn Light3 ON digitalWrite(4,HIGH); else if(int(val)==54)//Turn Light3 OFF digitalWrite(4,LOW); if(int(val)==55)//Turn AC ON digitalWrite(5,HIGH); else if(int(val)==56)//Turn AC OFF digitalWrite(5,LOW); if(int(val)==57)//Lock the DOOR digitalWrite(6,HIGH); else if(int(val)==48)//Unlock the DOOR digitalWrite(6,LOW); } }
+```ino
+/******************  Smartphone Controlled Home ******************/
+/*Coder - Arvind Sanjeev*/
 
-| --- | --- |
-| 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162 | /****************** Smartphone Controlled Home ******************//*Coder - Arvind Sanjeev*/ /*The following is the code required to be run on arduino to enable control of your home appliances from a smartphone, please install DIY SmartHome android application first on your android phone*/ /*This project requires 2 continous rotation servos connected to pins 9 and 10 of arduino*/ byte val; void setup(){ Serial.begin(115200);//Change the baud rate value depending on the default baud rate of your bluetooth module, for Bluesmirf-115200 and for JY-MCU-9600 pinMode(2, OUTPUT);//Light1 pin pinMode(3, OUTPUT);//Light2 pin pinMode(4, OUTPUT);//Light3 pin pinMode(5, OUTPUT);//AC pin pinMode(6, OUTPUT);//Door Lock} void loop(){ int a=0; if(Serial.available()) { val=Serial.read(); Serial.println(int(val));//Display received value on Serial Monitor if(int(val)==49)//Turn Light1 ON digitalWrite(2,HIGH); else if (int(val)==50)//Turn Light1 OFF digitalWrite(2,LOW); if(int(val)==51)//Turn Light2 ON digitalWrite(3,HIGH); else if(int(val)==52)//Turn Light2 OFF digitalWrite(3,LOW); if(int(val)==53)//Turn Light3 ON digitalWrite(4,HIGH); else if(int(val)==54)//Turn Light3 OFF digitalWrite(4,LOW); if(int(val)==55)//Turn AC ON digitalWrite(5,HIGH); else if(int(val)==56)//Turn AC OFF digitalWrite(5,LOW); if(int(val)==57)//Lock the DOOR digitalWrite(6,HIGH); else if(int(val)==48)//Unlock the DOOR digitalWrite(6,LOW); }} |
+/*The following is the code required to be run on arduino to enable control of your 
+home appliances from a smartphone, please install DIY SmartHome android application 
+first on your android phone*/
+
+/*This project requires 2 continous rotation servos connected to pins 9 and 10 of arduino*/ 
+
+byte val;
+
+void setup()
+{
+  Serial.begin(115200);//Change the baud rate value depending on the default baud rate of your bluetooth module, for Bluesmirf-115200 and for JY-MCU-9600
+  
+  pinMode(2, OUTPUT);//Light1 pin
+  pinMode(3, OUTPUT);//Light2 pin
+  pinMode(4, OUTPUT);//Light3 pin
+  pinMode(5, OUTPUT);//AC pin
+  pinMode(6, OUTPUT);//Door Lock
+}
+
+void loop()
+{
+ int a=0;
+ if(Serial.available())
+  {
+    val=Serial.read();
+    Serial.println(int(val));//Display received value on Serial Monitor
+
+if(int(val)==49)//Turn Light1 ON
+   digitalWrite(2,HIGH);
+
+ else if (int(val)==50)//Turn Light1 OFF
+         digitalWrite(2,LOW);
+
+if(int(val)==51)//Turn Light2 ON
+   digitalWrite(3,HIGH);
+   
+ else if(int(val)==52)//Turn Light2 OFF
+      digitalWrite(3,LOW);
+      
+if(int(val)==53)//Turn Light3 ON
+   digitalWrite(4,HIGH);
+
+ else if(int(val)==54)//Turn Light3 OFF
+       digitalWrite(4,LOW);
+       
+if(int(val)==55)//Turn AC ON
+   digitalWrite(5,HIGH);
+   
+ else if(int(val)==56)//Turn AC OFF
+       digitalWrite(5,LOW);
+       
+if(int(val)==57)//Lock the DOOR
+   digitalWrite(6,HIGH);
+   
+ else if(int(val)==48)//Unlock the DOOR
+       digitalWrite(6,LOW);
+    }
+}
+```
 
 کد بالا بسیار ساده و خوانا است و همچنین دارای کامنت جهت توضیح خطوط کد می باشد.
 
@@ -103,25 +163,23 @@ categories:
 
 **برای رفع این اشکال مقدار 115200 را در خط کد**
 
+```ino
 Serial.begin(115200);
-
-| --- | --- |
-| 1 | Serial.begin(115200); |
+```
 
 **به زیر تغییر دهید**
 
+```ino
 Serial.begin(9600);
-
-| --- | --- |
-| 1 | Serial.begin(9600); |
+```
 
 **نکته : دقت داشته باشید که در هنگام آپلود این کد بر روی برد خود ماژول بلوتوث به برد متصل نباشد. و Tx و Rx را قطع کنید تا به ماژول بلوتوث آسیبی نرسد . پس از آپلود کد روی برد می توانید مجدد آنها را متصل کنید.**
 
 ### **دانلود اپلیکیشن اندروید و اتصال بلوتوث آن به برد آردواینو**
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/4.jpg =480x800)
+{{< image src="images/post_2_homeAutomation/4.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
-برای نصب اپلیکیشن [**این فایل apk.**](http://nikitv.ir/wp-content/uploads/2017/04/ars-automation.apk) را دانلود و نصب نمایید.
+برای نصب اپلیکیشن [**این فایل apk.**](/uploads/ars-automation.apk) را دانلود و نصب نمایید.
 
 قبل از باز کردن برنامه شما نیاز خواهید داشت تا بلوتوث دستگاه هوشمند خود را با ماژول بلوتوث هنگام سازی (pair) کنید .برای این کار آردواینو را روشن کنید (به usb یا اداپتور و یا باتری وصل کنید) سپس بلوتوث دستگاه اندرویدی خود را روشن کرده و آن را برای بقیه دستگاه ها نمایان سازی کنید .(make it visible to other devices) سپس جستجوی دیگر دستگاه ها را بزنید . خواهید دید که ماژول بلوتوث در دستگاه شما نمایان می شود.کد هنگام سازی معمولا ‘1234’ و یا ‘0000’ می باشد.
 
@@ -129,9 +187,9 @@ Serial.begin(9600);
 
 اکنون دستگاه اندرویدی شما به برد متصل است و می توانید از آن استفاده کنید.
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/DIY_SmartHome1.jpg =480x800)
+{{< image src="images/post_2_homeAutomation/DIY_SmartHome1.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
-![](http://nikitv.ir/wp-content/uploads/2017/04/DIYSmartHome52.jpg =480x800)
+{{< image src="images/post_2_homeAutomation/DIYSmartHome52.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 ##### **نکات:**
 
@@ -139,6 +197,6 @@ Serial.begin(9600);
 
 ##### **2- درصورتی که برنامه نتوانست تمامی رله ها را روشن کند بدانید که منبع تغذیه برد شما مناسب نیست و باید ولتاژ بیشتری به برد برسانید.**
 
-##### **3- در صورتی که می خواهید این برنامه اندرویدی را توسعه دهید و یا شخصی سازی کنید می توانید سوروس کد آن را از همین پیج خریداری کنید.**
+[**دانلود سورس اپلیکیشن**](/uploads/home-automation.zip)
 
 تمام شد.
