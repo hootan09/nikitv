@@ -156,6 +156,6 @@ void loop()
 
 در پایان شما را به دیدن  ویدیو زیر دعوت می کنیم .
 
-{{< video "/uploads/Arduino-Bluetooth-Basic-BLINK-LED.mp4" "mx-auto d-block" >}}
+{{< video "/uploads/Arduino-Bluetooth-Basic-BLINK-LED.mp4" "mb-5 mx-auto d-block" >}}
 
 [**دانلود سورس کد**](/uploads/Arduino-Bluetooth-Basic.zip)
