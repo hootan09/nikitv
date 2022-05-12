@@ -180,7 +180,7 @@ void WaitForESP8266(const int timeout)
 
 {{< image src="images/post_16_espAtAndroid/unnamed-150x150.jpg" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
-عکس بالا ایکون اون برنامه هست و از گوگل پلی یعنی **[اینجا ](https://play.google.com/store/apps/details?id=com.sollae.eztcpclient)**می تونید نصبش کنید.تنظیم کردنش بسیار راحته.
+عکس بالا ایکون اون برنامه هست و از گوگل پلی یعنی **[اینجا ](https://play.google.com/store/apps/details?id=com.sollae.eztcpclient)** می تونید نصبش کنید.تنظیم کردنش بسیار راحته.
 
 ما فرض میکنیم که کدتون رو توی آردواینو upload کردید و حالا با گوشی اندروید به wifi متصل بشید احتمالا اسم وای فای اش AI-THIMKER هستش.بعد از وصل شدن ، اپلیکیشن رو باز کنید و مثل عکس کانفیگش کنید (عکس زیر)
 
