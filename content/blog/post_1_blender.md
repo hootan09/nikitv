@@ -2,7 +2,7 @@
 title: آموزش طراحی ساده با بلندر
 image: images/post_1_blender/Blender_LP_Illustration_a06b.jpg
 description: آموزش طراحی ساده با بلندر آموزش رایگان همراه با مدل سه بعدی آماده آن
-date: 2022-05-11T19:52:31.000+04:30
+date: 2017-04-03T11:56:58+04:30
 author: mam_niki
 tags: ["بلندر", "مدلسازی"]
 categories: ["طراحی سه بعدی"]
