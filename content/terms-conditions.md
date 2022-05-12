@@ -5,26 +5,30 @@ draft: false
 ---
 
 
-#### Responsibility of Contributors
+#### شرایط و مقررات استفاده از NikiTv
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed 
+شما در حالِ مطالعۀ شرایط و مقررات استفاده از NikiTv («شرایط استفاده») هستید.
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+1- NikiTv یک بلاگ شخصی انتشار محتوا (Personal Blog) است.
 
-#### Gathering of Personal Information
+2- استفادۀ شما از NikiTv به‌منزلۀ پذیرشِ کاملِ «شرایط استفاده» است.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+3- امکانِ تغییر در جزئیات یا کلیات «شرایط استفاده از NikiTv» وجود دارد. تغییرات در بسترِ زمان، به‌دلیلِ اتفاق‌های پیش‌بینی‌نشده یا به‌منظورِ بهبودِ کیفیت ارائه خدمات اعمال می‌شوند
 
-#### Protection of  Personal- Information
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. 
+#### قوانین
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat 
+1- حقوق معنوی و مادیِ نوشتۀ شما در NikiTv، متعلق به شماست. با این حال، با انتشار نوشته های خود در NikiTv، به NikiTv اجازه نشر نوشته های خود را می دهید.
 
-#### Privacy Policy Changes
+2- نقلِ مطالبِ دیگران از سوی کاربران، بدونِ ذکرِ منبع ممنوع است. در صورتِ اعتراضِ صاحبِ اصلیِ نوشته (منبعِ اصلی) NikiTv می‌تواند مطلبِ منتشرشده را حذف کند.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but  limited to, email addresses, telephone numbers
-4. Any Update come in The technology  Customer will get automatic  Notification.
+3- مسئولیت حقوقی مطالب هر کاربر بر عهدۀ خود او است و NikiTv به‌عنوان یک بستر نشر محتوا، هیچ دخالتی در نوشتۀ کاربرانش ندارد.
+
+4- مسئولیت محتوایی که منتشر می‌کنید بر عهده‌ی شماست. بدین معنا که شما متوجه کلیه‌ی عواقب ناشی از آن، شامل اعتماد دیگران به صحت محتوا، مسائل مربوط به حقوق مالکیت فکری و سایر مسائل و حقوق قانونی هستید.
+
+5- انتشار مطالب مجرمانه در NikiTv ممنوع است. کلیۀ مسوولیت‌های مربوط به انتشارِ مطالبِ مجرمانه در NikiTv برعهدۀ کاربر است. NikiTv به محض اطلاع از انتشار مطالب مجرمانه، نسبت به حذف آنها اقدام خواهد کرد.
+
+6- شرایط استفاده از مقالات موجود در NikiTv بر عهده خود خواننده می باشد و NikiTv در قبال استفاده نادرست و غلط و یا منجر به ضرر و زیان مسئولیتی را نمی پذیرد.
+
+---
