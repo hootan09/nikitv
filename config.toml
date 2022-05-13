@@ -87,6 +87,8 @@ search = true
 mainSections = ["blog"]
 # copyright
 copyright = "طراحی و توسعه توسط جمعی از دوستان [NikiTv](https://nikitv.ir/)"
+# twitter metaData
+twitter = "NikiTv.ir"
 
 # Preloader
 [params.preloader]
