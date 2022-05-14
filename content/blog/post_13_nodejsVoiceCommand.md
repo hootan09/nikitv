@@ -45,7 +45,7 @@ categories:
 
 اگه کمی درکش سخته میتونید به عکس زیر نگاه کنید تا متوجه این سه قسمت بالا بشید.
 
-![](http://nikitv.ir/wp-content/uploads/edd/2017/10/chatapp_with_web-speech_api-preview-opt-1.png)
+{{< image src="images/post_13_nodejsVoiceCommand/chatapp_with_web-speech_api-preview-opt-1.png" caption="" command="fill" option="q95" class="img-fluid mx-auto d-block" title="" >}}
 
 خب تمام سوروس کد رو  میتونید از **[اینجا ](https://github.com/hootan09/web-speech-ai)**دریافت کنید.
 
