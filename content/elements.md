@@ -199,6 +199,6 @@ Markdown | Less | Pretty
 
 {{< youtube C0DPdy98e4c >}}
 
-#### Costom Video
+#### Custom Video
 
 {{< video "/uploads/lumberjack.mp4" "mb-5 mx-auto d-block" >}}
