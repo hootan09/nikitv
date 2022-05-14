@@ -5,7 +5,7 @@ description: معرفی کلید های میانبر ویندوزی که بیش�
 date: 2017-04-21T18:33:55+04:3
 author: mam_niki
 tags:
-- Csharp
+- csharp
 - opencv
 - پردازش تصویر
 categories:

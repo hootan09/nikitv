@@ -6,7 +6,7 @@ date: 2017-10-02T06:28:03+03:30
 author: mam_niki
 tags:
 - iot
-- nodejs
+- node.js
 - هوش مصنوعی
 categories:
 - برنامه نویسی
