@@ -515,9 +515,9 @@ Success!
 اکنون سکه های هلن در دو خروجی قفل شده اند: یکی از پدرو و دیگری از ایوان. بیایید آنها را برای شخص دیگری بفرستیم:
 
 ```txt
-$ blockchain_go send -from Helen -to Rachel -amount 3`  
-000000c58136cffa669e767b8f881d16e2ede3974d71df43058baaf8c069f1a0`  
-Success!`  
+$ blockchain_go send -from Helen -to Rachel -amount 3
+000000c58136cffa669e767b8f881d16e2ede3974d71df43058baaf8c069f1a0
+Success!
 
 $ blockchain_go getbalance -address Ivan
 Balance of 'Ivan': 2
